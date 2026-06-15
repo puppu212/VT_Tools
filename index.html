@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171b22">
+  <meta name="description" content="ヴァーレントゥーガ制作を支援するWebツール集">
+  <title>VT Tools</title>
+  <link rel="icon" href="./icons/mapmaker.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="VT Tools ホーム">
+      <span class="brand-mark" aria-hidden="true">VT</span>
+      <span>VT Tools</span>
+    </a>
+    <nav class="header-links" aria-label="ページ内リンク">
+      <a href="#tools">ツール</a>
+      <a href="#guide">使い方</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Vahren Tools Collection</p>
+      <h1 id="hero-title">
+        <span>目的に合うツールを選んで、</span>
+        <span>すぐに制作を始められます。</span>
+      </h1>
+      <p class="hero-description">
+        マップ作成、画像素材の管理、スポット設定を支援する、
+        ヴァーレントゥーガ向けのブラウザツール集です。
+      </p>
+      <div class="hero-note">
+        <span class="status-dot" aria-hidden="true"></span>
+        インストール不要・ブラウザ内で動作
+      </div>
+    </section>
+
+    <section id="tools" class="tools-section" aria-labelledby="tools-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Applications</p>
+          <h2 id="tools-title">ツールを選ぶ</h2>
+        </div>
+        <p>制作したい内容に合わせてツールを選べます。</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card" data-tool="mapmaker">
+          <div class="card-top">
+            <img class="tool-icon" src="./icons/mapmaker.svg" alt="">
+            <span class="tool-kind">マップ編集</span>
+          </div>
+          <div class="card-body">
+            <h3>VT MapMaker</h3>
+            <p>地形や建物を配置し、ヴァーレントゥーガ用のマップを作成・編集します。</p>
+            <ul class="feature-list">
+              <li>MAPファイルの新規作成・編集</li>
+              <li>PNG素材と素材フォルダの追加</li>
+              <li>重なりを確認できる立体表示</li>
+            </ul>
+            <div class="file-types" aria-label="対応形式">
+              <span>.map</span>
+              <span>.png</span>
+              <span>.dat</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p class="last-opened" data-last-opened>まだ起動していません</p>
+            <div class="card-actions">
+              <a class="button secondary" href="https://github.com/puppu212/VT_MapMaker" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button primary launch-link" href="https://puppu212.github.io/VT_MapMaker/" data-tool-id="mapmaker" target="_blank" rel="noreferrer">起動する</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="tool-card" data-tool="imagemaker">
+          <div class="card-top">
+            <img class="tool-icon" src="./icons/imagemaker.svg" alt="">
+            <span class="tool-kind">画像素材</span>
+          </div>
+          <div class="card-body">
+            <h3>VT ImageMaker</h3>
+            <p>画像素材を一覧で確認・編集し、ゲームで使用する画像DATを書き出します。</p>
+            <ul class="feature-list">
+              <li>素材の全体表示・個別表示</li>
+              <li>PNG・BMP素材の追加と置換</li>
+              <li>image・imagedata DATの作成</li>
+            </ul>
+            <div class="file-types" aria-label="対応形式">
+              <span>.dat</span>
+              <span>.png</span>
+              <span>.bmp</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p class="last-opened" data-last-opened>まだ起動していません</p>
+            <div class="card-actions">
+              <a class="button secondary" href="https://github.com/puppu212/VT_ImageMaker" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button primary launch-link" href="https://puppu212.github.io/VT_ImageMaker/" data-tool-id="imagemaker" target="_blank" rel="noreferrer">起動する</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="tool-card" data-tool="spotmaker">
+          <div class="card-top">
+            <img class="tool-icon" src="./icons/spotmaker.svg" alt="">
+            <span class="tool-kind">スポット編集</span>
+          </div>
+          <div class="card-body">
+            <h3>VT SpotMaker</h3>
+            <p>ワールドマップ上へスポットを配置し、通常・退却連絡線を視覚的に編集します。</p>
+            <ul class="feature-list">
+              <li>スポットの配置・移動・設定</li>
+              <li>通常連絡線と退却連絡線の編集</li>
+              <li>scenario・spot DATの入出力</li>
+            </ul>
+            <div class="file-types" aria-label="対応形式">
+              <span>.dat</span>
+              <span>.png</span>
+              <span>.jpg</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <p class="last-opened" data-last-opened>まだ起動していません</p>
+            <div class="card-actions">
+              <a class="button secondary" href="https://github.com/puppu212/VT_SpotMaker" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button primary launch-link" href="https://puppu212.github.io/VT_SpotMaker/" data-tool-id="spotmaker" target="_blank" rel="noreferrer">起動する</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="guide" class="guide-section" aria-labelledby="guide-title">
+      <div class="guide-copy">
+        <p class="eyebrow">Getting Started</p>
+        <h2 id="guide-title">ファイルは端末から選択します</h2>
+        <p>
+          ツールを開いた時点では、端末内のファイルへ勝手にアクセスしません。
+          編集したいファイルや素材を、それぞれのツール内で選択して使用します。
+        </p>
+      </div>
+      <div class="guide-points">
+        <div>
+          <span>01</span>
+          <strong>ツールを起動</strong>
+          <p>目的に合うカードからブラウザ版を開きます。</p>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>ファイルを選択</strong>
+          <p>端末内の編集対象や素材を自分で選びます。</p>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>端末へ保存</strong>
+          <p>完成したデータを対応形式で書き出します。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>VT Tools</p>
+    <p>ブラウザ内の作業データは、各ツールごとに保存されます。</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

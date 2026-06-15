@@ -36,3 +36,7 @@ test("portal copy describes user goals without implementation details", () => {
   assert.match(html, /制作したい内容に合わせてツールを選べます。/);
   assert.doesNotMatch(html, /独立して/);
 });
+
+test("footer credits the creator", () => {
+  assert.match(html, /© 2026 <a href="https:\/\/github\.com\/puppu212"[^>]*>puppu212<\/a>/);
+});

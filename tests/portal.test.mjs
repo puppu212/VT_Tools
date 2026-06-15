@@ -33,7 +33,9 @@ test("portal remembers the last launched application locally", () => {
 
 test("portal copy describes user goals without implementation details", () => {
   assert.match(html, /マップ作成、画像素材の管理、スポット設定を支援する/);
+  assert.match(html, /VTオリシナ制作用のブラウザツール集です。/);
   assert.match(html, /制作したい内容に合わせてツールを選べます。/);
+  assert.doesNotMatch(html, /ヴァーレントゥーガ向けの/);
   assert.doesNotMatch(html, /独立して/);
 });
 

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="128" fill="#ef9f43"/>
+  <rect x="18" y="18" width="476" height="476" rx="112" fill="none" stroke="#ffc46f" stroke-width="20"/>
+  <text x="256" y="318" text-anchor="middle" fill="#24170a" font-family="Arial, sans-serif" font-size="212" font-weight="900" letter-spacing="-16">VT</text>
+</svg>

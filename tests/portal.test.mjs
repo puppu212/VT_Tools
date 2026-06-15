@@ -22,6 +22,8 @@ test("portal uses the shared VT visual theme", () => {
   assert.match(css, /--bg:\s*#101319/);
   assert.match(css, /--accent:\s*#ef9f43/);
   assert.match(css, /grid-template-columns:\s*repeat\(3,/);
+  assert.match(html, /rel="icon" href="\.\/icons\/vt-tools\.svg"/);
+  assert.doesNotMatch(html, /rel="icon" href="\.\/icons\/mapmaker\.svg"/);
 });
 
 test("portal remembers the last launched application locally", () => {
